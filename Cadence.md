@@ -52,4 +52,19 @@ sudo apt-get install cadence
 ## Using Claudia
 * From here on out, you need to configure your Studio and save it.
 * You can add custom commands at `Application -> Run Custom`.
-* I recommend using `PulseAudio` commands here, to set your defaults.
+* These commands (applications) can be executed on command by 'Starting' them.
+* Use the run levels to manage the order of execution.
+* I recommend using `PulseAudio` commands here, to set your defaults:
+
+```
+# Set JACK as the default input device
+/usr/bin/pacmd set-default-source jack_in
+
+# Set JACK as the default output device
+/usr/bin/pacmd set-default-sink jack_out
+
+# Boost your microphone
+/usr/bin/pactl set-source-volume <YOUR MIC>
+```
+
+# Happy Streaming
