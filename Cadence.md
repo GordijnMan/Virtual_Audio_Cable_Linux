@@ -10,7 +10,7 @@
 * This means you can configure a virtual audio card for JACK, which you can fully configure.
 * This will create a virtual audio channel, and you can route your mic and desktop into this channel.
 * You can then save your session, and load this session each time you start Cadence.
-* You can even add additional commands, which can be useful as I will show you.
+* You can even add additional commands, which can be useful for using PulseAudio with Cadence.
 
 ### Get it, now
 * First, make sure you've updated your kernel to the latest version.
