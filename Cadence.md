@@ -31,9 +31,8 @@ sudo apt-get upgrade
 # Install required dependencies if needed
 sudo apt-get install apt-transport-https gpgv wget
 
-# Download package file from https://kx.studio/,
-# I prefer apt-get with dependency resolution over dpkg
-sudo apt-get install -f ./kxstudio-repos_11.1.0_all.deb
+# Download package file from https://kx.studio/, install
+sudo dpkg -i ./kxstudio-repos_11.1.0_all.deb
 
 # Install Cadence
 sudo apt-get install cadence
