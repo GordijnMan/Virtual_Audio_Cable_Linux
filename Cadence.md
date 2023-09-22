@@ -32,7 +32,7 @@ sudo apt-get upgrade
 sudo apt-get install apt-transport-https gpgv wget
 
 # Download package file from https://kx.studio/, install
-sudo dpkg -i ./kxstudio-repos_11.1.0_all.deb
+sudo dpkg -i ./kxstudio-repos*.deb
 
 # Install Cadence
 sudo apt-get install cadence
