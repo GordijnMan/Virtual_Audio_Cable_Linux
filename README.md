@@ -1,4 +1,9 @@
 # Virtual Audio Cable Linux
+## Quick links
+* [Cadence](./Cadence.md)
+* [PulseAudio](./PulseAudio.md)
+
+## Description
 * It took me way too long to fix this, so I made a repository for it. 
 * I used [VoiceMeeter](https://vb-audio.com/Voicemeeter/) on Windows to record my stream audio into a virtual microphone.
 * VoiceMeeter uses [Virtual Audio Cable](https://vb-audio.com/Cable/index.htm) (VAC) to create a virtual audio card.
