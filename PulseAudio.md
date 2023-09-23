@@ -9,7 +9,6 @@
 ## Create a VAC channel
 * This is your audio stream.
 * We will send desktop output and mic input to this channel.
-* At this point, this channel still does nothing.
 
 ```
 # Creating the sink
@@ -20,7 +19,7 @@ pacmd update-sink-proplist STREAM device.description=Virtual_Output
 pacmd update-source-proplist STREAM.monitor device.description=Virtual_Input
 ```
 
-* Notice how the .monitor device can set as DEFAULT.
+* At this point, this channel still does nothing.
 
 ## Add desktop audio to VAC
 * Check the sinks to see which output you'd like to use to hear desktop audio.
@@ -56,6 +55,7 @@ pacmd load-module module-loopback sink=VAC source=<MIC> latency_msec=1
 * That means that communications are looped back into the mic when you are in a two-way stream.
 * If you want to prevent looping back certain applications (such as Discord), you can select your preferred output inside this app (instead of the combined MAIN channel).
 * This way, only your preferred output hears the communications channel.
+* Notice how the .monitor device can set as DEFAULT.
 
 ```
 # Set your MAIN as DEFAULT sink, to your preferred output and VAC
