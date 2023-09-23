@@ -1,4 +1,6 @@
-# Cadence
+# Cadence Method
+* **JACK Audio Connection Kit takes exclusive control of your audio devices.**
+* This means that this method will not work if you need to use the configured devices for other purposes than JACK.
 * If you want to record your mic and desktop audio into a seperate Virtual Audio Cable, such as VAC or VoiceMeeter on Windows, THIS is what you are looking for!
 * Cadence is an installation suite, and comes with multiple apps:
   1. Catarina: Patchbay, I never use it.
@@ -66,4 +68,6 @@ sudo apt-get install cadence
 /usr/bin/pactl set-source-volume <YOUR MIC>
 ```
 
-# Happy Streaming
+* Unfortunately, JACK ended up not being the solution to my problem.
+* That is because JACK took exclusive control of the same device I needed for communications.
+* So, I had another go at the [PulseAudio Method](./PulseAudio.md).
